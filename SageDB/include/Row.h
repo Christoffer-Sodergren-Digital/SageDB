@@ -14,6 +14,7 @@ public:
 	virtual ~Row(){}
 
 	ResultSet *Next();
+	ResultSet *Next(int & po_iBytesRead);
 
 
 	void Serialize(KeyPair *p_pxKP);

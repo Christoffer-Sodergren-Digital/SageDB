@@ -74,8 +74,13 @@ namespace SageDB{
 		return Match(p_pxCell);
 	}
 
-	/*bool Expression::Match(const std::string & p_sMatch){
-
-	}*/
+	std::ostream & operator<<(std::ostream & p_xO,Expression & p_xE){
+		KeyPairSet xKPS=p_xE.KeyPairs();
+		KeyPairSet::iterator it;
+		for(it=xKPS.begin();it!=xKPS.end();++it){
+			p_xO<<*(*it);
+		}
+		return p_xO;
+	}
 
 }

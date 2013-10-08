@@ -17,8 +17,8 @@ public:
 	const std::string & Val()const{return m_xVal;}
 	void SetVal(const std::string & p_xVal){m_xVal=p_xVal;}
 
-	std::ofstream & Serialize(std::ofstream & p_xStream){
-		p_xStream<<m_sKey<<"="<<m_xVal<<",";
+	friend std::ostream & operator<<(std::ostream & p_xStream, Cell & p_xC){
+		p_xStream<<p_xC.m_sKey<<"="<<p_xC.m_xVal<<" ";
 		return p_xStream;
 	}
 

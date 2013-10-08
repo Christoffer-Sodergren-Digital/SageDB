@@ -87,8 +87,6 @@ public:
 	}
 
 	friend std::ostream & operator<<(std::ostream & p_xO,KeyPair & p_xKP){
-		/*std::string sTmp0=;
-		std::string sTmp1=;*/
 		p_xO<<p_xKP.Key()<<"="<<p_xKP.Val()<<" ";
 		return p_xO;
 	}

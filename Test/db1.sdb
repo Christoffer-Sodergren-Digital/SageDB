@@ -1,10 +1,11 @@
-*SageDB
-name=mstrp age=27 level=2
-name=Mstrp age=27 level=2
-name=amstrp age=27 level=2
-name=bmstrp age=27 level=2
-name=cmstrp age=27 level=2
-name=dmstrp age=27 level=2
+rowsize=128
+name=mstrp age=27 level=4 
+name=Mstrp age=27 level=2 
+name=amstrp age=4 level=2 
+name=bmstrp age=27 level=2 
+name=kmstrp age=4 level=2
+name=dmstrp age=flower level=2 
 *Some comment
-name=Chris lname=tucker age=24
+name=Chris lname=tucker age=24 
 name=Jon age=37 stone=many 
+name=kalle points=125 

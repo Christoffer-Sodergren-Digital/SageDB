@@ -20,7 +20,7 @@ enum CollectionSortFlag{
 class Collection{
 public:
 	
-	Collection(std::string p_sName);
+	Collection(std::string p_sName,int p_iRowLength=256);
 	~Collection();
 
 	static void SetSortFlag(CollectionSortFlag p_eSortFlag);
@@ -40,9 +40,16 @@ private:
 	bool Create();
 	bool Open();
 
+	void Rewind();
+
+	void ReadHeader();
+
 	Expression m_xSearchPattern;
 	static CollectionSortFlag m_eSortPattern;
 	std::string m_sCollectionName;
+
+	int m_iRowLength;
+	int m_iContentOffset;
 
 	std::fstream m_xFileStream;
 };

@@ -22,10 +22,9 @@ public:
 	void Remove(const std::string & p_sPart);
 
 	bool Match(Cell *p_xCell);
-	//bool Match(const std::string & p_sMatch);
-
 	bool operator==(Cell *p_xCell);
-	//bool operator==(const std::string & p_sMatch);
+
+	friend std::ostream & operator<<(std::ostream & p_xO,Expression & p_xE);
 
 	KeyPairSet & KeyPairs(){return m_xKeyPairs;}
 
